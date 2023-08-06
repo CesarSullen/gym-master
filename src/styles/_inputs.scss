@@ -1,0 +1,43 @@
+.profile-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 2rem;
+	margin-inline: 3rem;
+	.button-ctr {
+		margin: auto;
+		margin-top: 2rem;
+	}
+	ul {
+		font-size: $base-font-size;
+		list-style: none;
+	}
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+}
+.button-ctr {
+	background: $gradient-primary;
+	box-shadow: $box-shadow;
+	font-size: $base-font-size;
+	padding: 1rem;
+	width: 10rem;
+	border-radius: $base-border-radius;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+input[type="text"] {
+	padding: 0.7rem;
+	font-size: $font-size-lg;
+	border-radius: $base-border-radius;
+
+	&:focus {
+		border-bottom: solid $primary 5px;
+	}
+}
