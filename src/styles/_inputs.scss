@@ -15,7 +15,8 @@
 }
 
 input,
-button {
+button,
+select {
 	border: none;
 	outline: none;
 }
@@ -36,8 +37,26 @@ input[type="text"] {
 	padding: 0.7rem;
 	font-size: $font-size-lg;
 	border-radius: $base-border-radius;
+	background-color: $secondary;
 
 	&:focus {
 		border-bottom: solid $primary 5px;
+	}
+}
+
+.genre-selector {
+	padding: 0.7rem;
+	font-size: $base-font-size;
+	border-radius: $base-border-radius;
+	cursor: pointer;
+	background-color: $secondary;
+}
+
+@media screen and (min-width: 700px) {
+	.profile-container {
+		align-items: center;
+	}
+	input[type="text"] {
+		width: 50%;
 	}
 }

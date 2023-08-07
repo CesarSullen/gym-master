@@ -1,4 +1,4 @@
-.cards-title {
+blockquote {
 	font-size: $font-size-lg;
 	margin-top: 1rem;
 	text-align: center;
@@ -6,21 +6,20 @@
 
 .cards-container {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	gap: 3rem;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	margin-top: 1rem;
 
 	.card {
-		margin-top: 1rem;
+		margin-inline: auto;
 		box-shadow: $box-shadow;
 		display: flex;
-		margin: auto;
+		align-items: center;
 		border-radius: $base-border-radius;
 		font-size: $base-font-size;
 		background: $gradient-primary;
 		width: 20rem;
 		height: 10rem;
-		flex-direction: column;
-		justify-content: space-around;
 		color: white;
 
 		p {
@@ -28,13 +27,16 @@
 			width: 50%;
 		}
 
+		img {
+			width: 10rem;
+			border-radius: inherit;
+		}
 		&:hover {
 			cursor: pointer;
 			transform: scale(1.1);
 		}
 	}
 }
-
 @media screen and (min-width: 700px) {
 	.cards-container {
 		grid-template-columns: repeat(4, 1fr);

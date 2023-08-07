@@ -6,7 +6,7 @@
 		lastName: "",
 		mail: "",
 		age: null,
-		sex: "",
+		genre: "",
 	});
 
 	const saveProfile = () => {
@@ -33,14 +33,13 @@
 		<label class="profile-label">Age:</label>
 		<input type="text" placeholder="Age" v-model="user.age" />
 
+		<label class="profile-label">Select your genre:</label>
 		<ul>
-			<label class="profile-label">Select your sex:</label>
-
-			<li><input type="radio" value="male" v-model="user.sex" />Male</li>
-			<li><input type="radio" value="female" v-model="user.sex" />Female</li>
-			<li>
-				<input type="radio" value="gay" v-model="user.sex" />I prefer not to say
-			</li>
+			<select class="genre-selector" v-model="user.genre">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="not said">I prefer not to say</option>
+			</select>
 		</ul>
 		<button class="button-ctr" @click="saveProfile">Save</button>
 	</div>

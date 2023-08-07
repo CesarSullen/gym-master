@@ -1,124 +1,136 @@
-.nav-bar,
-.nav-bar-active {
-	backdrop-filter: blur(2rem);
-	position: absolute;
-	left: 0px;
-	width: 40%;
-	height: 95%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-radius: 0px 20px 20px 0px;
-	box-shadow: $box-shadow;
-	ul {
-		width: 100%;
-		text-align: center;
+.full-bar {
+	position: sticky;
+	top: 0px;
+	z-index: 1;
 
-		li {
-			margin-top: 2rem;
-			list-style: none;
+	.nav-bar,
+	.nav-bar-active {
+		backdrop-filter: blur(2rem);
+		position: absolute;
+		left: 0px;
+		padding: 1rem;
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 0px 20px 20px 0px;
+		box-shadow: $box-shadow;
+		ul {
+			width: 100%;
+			text-align: center;
 
-			a {
-				color: black;
-				text-decoration: none;
-				font-size: 1.3rem;
-				padding: 1rem;
+			li {
+				margin-top: 2rem;
+				list-style: none;
 
-				&.router-link-exact-active {
-					background: $gradient-primary;
-					color: $secondary;
-					padding: 0.5rem 2.5rem;
+				a {
+					color: black;
+					text-decoration: none;
+					font-size: 1.3rem;
+					padding: 1rem;
 					border-radius: $base-border-radius;
+
+					&:hover {
+						background: opacify($color: $secondary, $amount: 0);
+					}
+
+					&.router-link-exact-active {
+						background: $gradient-primary;
+						color: $secondary;
+						padding: 0.5rem 2.5rem;
+					}
 				}
 			}
 		}
 	}
-}
-
-.nav-bar {
-	transform: translateX(-100%);
-}
-
-.nav-bar-active {
-	transform: translateX(0%);
-}
-
-.title {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	backdrop-filter: blur(2rem);
-
-	a {
-		font-size: $font-size-xl;
-		text-align: left;
-		text-decoration: none;
-		color: black;
-	}
-
-	.burger,
-	.toggle-burger {
-		div {
-			width: 20px;
-			height: 2px;
-			background-color: black;
-			margin: 5px;
-		}
-
-		&:hover {
-			cursor: pointer;
-		}
-	}
-
-	.toggle-burger {
-		.line-1 {
-			transform: rotate(-45deg) translate(-5px, 5px);
-		}
-
-		.line-2 {
-			opacity: 0;
-		}
-
-		.line-3 {
-			transform: rotate(45deg) translate(-5px, -5px);
-		}
-	}
-}
-
-@media screen and (min-width: 700px) {
-	.burger {
-		display: none;
-	}
 
 	.nav-bar {
-		display: flex;
-		margin-inline: auto;
+		transform: translateX(-100%);
+	}
+
+	.nav-bar-active {
 		transform: translateX(0%);
-		width: 95%;
-		position: relative;
-		border-radius: $base-border-radius;
-		background: $gradient-primary;
+	}
 
-		ul {
-			margin-top: 0rem;
+	.title {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		backdrop-filter: blur(2rem);
+		gap: 0.5rem;
+
+		img {
+			width: 30px;
+			border-radius: $base-border-radius;
+		}
+		a {
+			font-size: $font-size-xl;
+			text-align: left;
+			text-decoration: none;
+			color: black;
+		}
+
+		.burger,
+		.toggle-burger {
+			div {
+				width: 20px;
+				height: 2px;
+				background-color: black;
+				margin: 5px;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.toggle-burger {
+			.line-1 {
+				transform: rotate(-45deg) translate(-5px, 5px);
+			}
+
+			.line-2 {
+				opacity: 0;
+			}
+
+			.line-3 {
+				transform: rotate(45deg) translate(-5px, -5px);
+			}
+		}
+	}
+}
+@media screen and (min-width: 700px) {
+	.full-bar {
+		.burger {
+			display: none;
+		}
+
+		.nav-bar {
 			display: flex;
-			list-style: none;
-			justify-content: space-around;
-			padding: 1rem;
+			margin-inline: auto;
+			transform: translateX(0%);
+			width: 95%;
+			position: relative;
+			border-radius: $base-border-radius;
 
-			li,
-			.nav-bar-active li {
-				margin-top: 0;
+			ul {
+				margin-top: 0rem;
+				display: flex;
+				list-style: none;
+				justify-content: space-around;
+				padding: 1rem;
 
-				a {
-					font-size: 1.5rem;
-					border-radius: 10px 10px 0 0;
+				li,
+				.nav-bar-active li {
+					margin-top: 0;
 
-					&.router-link-exact-active {
-						background: $secondary;
-						color: black;
-						padding: none;
-						border-radius: $base-border-radius;
+					a {
+						font-size: 1.5rem;
+
+						&.router-link-exact-active {
+							color: black;
+							padding: none;
+						}
 					}
 				}
 			}
