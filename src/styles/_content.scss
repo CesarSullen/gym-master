@@ -6,10 +6,19 @@
 		top: 2rem;
 		inline: 3rem;
 	}
+
+	img {
+		width: 45%;
+		align-self: center;
+		border: solid 2px $primary;
+		border-radius: 100%;
+	}
+
 	.ctr-button {
 		margin: auto;
 		margin-top: 2rem;
 	}
+
 	ul {
 		font-size: $base-font-size;
 		list-style: none;
@@ -33,6 +42,10 @@
 
 @media screen and (min-width: 700px) {
 	.profile-container {
+		img {
+			width: 20%;
+		}
+
 		.ctr-button:hover {
 			transform: scale(1.1);
 		}

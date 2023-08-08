@@ -24,40 +24,53 @@
 				<h3>GYM Master</h3>
 			</router-link>
 			<router-link :to="{ name: 'Profile' }">
-				<img src="../public/icon.png" alt="App icon" />
+				<img src="../public/profile-pics/01.png" alt="App icon" />
 			</router-link>
 		</div>
 
 		<div :class="barActive ? 'nav-bar-active' : 'nav-bar'">
 			<ul>
 				<li>
-					<router-link to="/">Home</router-link>
-				</li>
-				<li>
-					<router-link :to="{ name: 'Profile' }" 
-						>Profile</router-link
+					<router-link to="/">
+						<img src="../public/icons/home.png" alt="icon" />
+						Home</router-link
 					>
 				</li>
 				<li>
-					<router-link :to="{ name: 'Diets' }" >Diets</router-link>
-				</li>
-				<li>
-					<router-link :to="{ name: 'Routines' }" 
-						>Routines</router-link
+					<router-link :to="{ name: 'Profile' }">
+						<img src="../public/icons/profile.png" alt="icon" />
+						Profile</router-link
 					>
 				</li>
 				<li>
-					<router-link :to="{ name: 'Statistics' }" 
-						>Statistics</router-link
+					<router-link :to="{ name: 'Diets' }">
+						<img src="../public/icons/diets.png" alt="icon" />
+						Diets</router-link
 					>
 				</li>
 				<li>
-					<router-link :to="{ name: 'Settings' }" 
-						>Settings</router-link
+					<router-link :to="{ name: 'Routines' }">
+						<img src="../public/icons/routines.png" alt="icon" />
+						Routines</router-link
 					>
 				</li>
 				<li>
-					<router-link :to="{ name: 'About' }" >About</router-link>
+					<router-link :to="{ name: 'Statistics' }">
+						<img src="../public/icons/statistics.png" alt="icon" />
+						Statistics</router-link
+					>
+				</li>
+				<li>
+					<router-link :to="{ name: 'Settings' }">
+						<img src="../public/icons/settings.png" alt="icon" />
+						Settings</router-link
+					>
+				</li>
+				<li>
+					<router-link :to="{ name: 'About' }">
+						<img src="../public/icons/about.png" alt="icon" />
+						About</router-link
+					>
 				</li>
 			</ul>
 		</div>
@@ -67,10 +80,21 @@
 	<footer>
 		<div class="icon">GYM Master</div>
 
-		<div class="social">Twitter, Instaram, Facebook (icons)</div>
+		<div class="social">
+			<img src="../public/icons/socials/facebook.png" alt="social icon" />
+			<img src="../public/icons/socials/twitter.png" alt="social icon" />
+			<img src="../public/icons/socials/instagram.png" alt="social icon" />
+		</div>
 
 		<div class="copy">©2023(fake)</div>
 
 		<div>⛔All the images were taken randomly on Google⛔</div>
+
+		<div>
+			⛔All the icons were taken from
+			<a href="https://www.flaticon.es/autores/freepik" target="_blank"
+				>Flaticon</a
+			>⛔
+		</div>
 	</footer>
 </template>

@@ -2,6 +2,7 @@
 	import { ref, onMounted } from "vue";
 
 	const user = ref({
+		image: "", //not ready
 		name: "",
 		lastName: "",
 		mail: "",
@@ -21,6 +22,8 @@
 <template>
 	<h1>Profile</h1>
 	<div class="profile-container">
+		<img src="../../public/profile-pics/01.png" />
+
 		<label class="profile-label">Name:</label>
 		<input type="text" placeholder="Name" v-model="user.name" />
 

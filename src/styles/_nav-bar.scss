@@ -17,14 +17,17 @@
 		box-shadow: $box-shadow;
 		ul {
 			width: 100%;
-			text-align: center;
 
 			li {
 				margin-top: 2rem;
 				list-style: none;
-
 				&:nth-child(1) {
 					margin-top: 1rem;
+				}
+
+				img {
+					width: 20px;
+					justify-self: left;
 				}
 
 				a {

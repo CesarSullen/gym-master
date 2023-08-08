@@ -4,7 +4,7 @@
 			id: 1,
 			title: "Start with a diet",
 			redirect: "#",
-			image: "../../public/icon.png",
+			image: "../../public/icons/app-icon.png",
 		},
 		{
 			id: 2,
