@@ -38,9 +38,8 @@
 			<select class="genre-selector" v-model="user.genre">
 				<option value="male">Male</option>
 				<option value="female">Female</option>
-				<option value="not said">I prefer not to say</option>
 			</select>
 		</ul>
-		<button class="button-ctr" @click="saveProfile">Save</button>
+		<button class="ctr-button" @click="saveProfile">Save</button>
 	</div>
 </template>

@@ -20,9 +20,11 @@
 				<div class="line-3"></div>
 			</div>
 
-			<img src="../public/icon.png" alt="" />
 			<router-link to="/">
-				<h4>GYM Master</h4>
+				<h3>GYM Master</h3>
+			</router-link>
+			<router-link :to="{ name: 'Profile' }">
+				<img src="../public/icon.png" alt="App icon" />
 			</router-link>
 		</div>
 
@@ -32,27 +34,30 @@
 					<router-link to="/">Home</router-link>
 				</li>
 				<li>
-					<router-link :to="{ name: 'Profile' }" class="link"
+					<router-link :to="{ name: 'Profile' }" 
 						>Profile</router-link
 					>
 				</li>
 				<li>
-					<router-link :to="{ name: 'Routines' }" class="link"
+					<router-link :to="{ name: 'Diets' }" >Diets</router-link>
+				</li>
+				<li>
+					<router-link :to="{ name: 'Routines' }" 
 						>Routines</router-link
 					>
 				</li>
 				<li>
-					<router-link :to="{ name: 'Statistics' }" class="link"
+					<router-link :to="{ name: 'Statistics' }" 
 						>Statistics</router-link
 					>
 				</li>
 				<li>
-					<router-link :to="{ name: 'Settings' }" class="link"
+					<router-link :to="{ name: 'Settings' }" 
 						>Settings</router-link
 					>
 				</li>
 				<li>
-					<router-link :to="{ name: 'About' }" class="link">About</router-link>
+					<router-link :to="{ name: 'About' }" >About</router-link>
 				</li>
 			</ul>
 		</div>
@@ -64,6 +69,8 @@
 
 		<div class="social">Twitter, Instaram, Facebook (icons)</div>
 
-		<div class="copy">©2023</div>
+		<div class="copy">©2023(fake)</div>
+
+		<div>⛔All the images were taken randomly on Google⛔</div>
 	</footer>
 </template>

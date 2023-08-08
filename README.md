@@ -1,7 +1,30 @@
-# Vue 3 + Vite
+# GYM Master
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### An app with the aim of tracking your training routines and diets.
 
-## Recommended IDE Setup
+**Technologies used:**
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Vue 3 (router included)
+- Vite
+- Sass
+- Local storage
+
+**First version**
+
+<!--
+  **Last update:**
+ -->
+
+## Screenshots
+
+![phone view](./public/screenshots/phone-view.png)
+
+_Phone View_
+
+![phone view - profile](./public/screenshots/phone-view-profile.png)
+
+_Phone View (profile)_
+
+![desktop view](./public/screenshots/desktop-view.png)
+
+_Desktop View_

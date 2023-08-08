@@ -14,31 +14,52 @@ blockquote {
 		margin-inline: auto;
 		box-shadow: $box-shadow;
 		display: flex;
-		align-items: center;
 		border-radius: $base-border-radius;
 		font-size: $base-font-size;
 		background: $gradient-primary;
 		width: 20rem;
 		height: 10rem;
 		color: white;
+		cursor: pointer;
 
-		p {
-			margin-left: 1rem;
+		.card-left-side {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
 			width: 50%;
-		}
+			margin: 1rem;
+			.card-title {
+				font: {
+					size: $font-size-lg;
+					weight: bold;
+				}
+			}
 
+			.ghost-button {
+				text-align: center;
+				padding: 0.5rem;
+				width: 90%;
+				border-radius: $border-radius-rounded;
+				a {
+					color: black;
+				}
+			}
+		}
 		img {
 			width: 10rem;
 			border-radius: inherit;
-		}
-		&:hover {
-			cursor: pointer;
-			transform: scale(1.1);
 		}
 	}
 }
 @media screen and (min-width: 700px) {
 	.cards-container {
 		grid-template-columns: repeat(4, 1fr);
+
+		.card {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	}
 }

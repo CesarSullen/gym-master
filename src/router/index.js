@@ -7,6 +7,7 @@ import Statistics from "../views/Statistics.vue";
 import Settings from "../views/Settings.vue";
 import Profile from "../views/Profile.vue";
 import Routines from "../views/Routines.vue";
+import Diets from "../views/Diets.vue";
 
 const routes = [
 	{
@@ -43,6 +44,11 @@ const routes = [
 		path: "/Routines",
 		name: "Routines",
 		component: Routines,
+	},
+	{
+		path: "/Diets",
+		name: "Diets",
+		component: Diets,
 	},
 ];
 

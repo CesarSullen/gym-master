@@ -23,16 +23,16 @@
 				margin-top: 2rem;
 				list-style: none;
 
+				&:nth-child(1) {
+					margin-top: 1rem;
+				}
+
 				a {
 					color: black;
 					text-decoration: none;
 					font-size: 1.3rem;
 					padding: 1rem;
 					border-radius: $base-border-radius;
-
-					&:hover {
-						background: opacify($color: $secondary, $amount: 0);
-					}
 
 					&.router-link-exact-active {
 						background: $gradient-primary;
@@ -56,31 +56,31 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
+		justify-content: space-around;
 		backdrop-filter: blur(2rem);
-		gap: 0.5rem;
+		gap: 4rem;
 
 		img {
 			width: 30px;
-			border-radius: $base-border-radius;
+			border-radius: $border-radius-rounded;
 		}
 		a {
 			font-size: $font-size-xl;
-			text-align: left;
-			text-decoration: none;
 			color: black;
+			text: {
+				align: left;
+				decoration: none;
+			}
 		}
 
 		.burger,
 		.toggle-burger {
+			cursor: pointer;
 			div {
 				width: 20px;
 				height: 2px;
-				background-color: black;
 				margin: 5px;
-			}
-
-			&:hover {
-				cursor: pointer;
+				background-color: black;
 			}
 		}
 
@@ -104,12 +104,23 @@
 		.burger {
 			display: none;
 		}
-
+		.title {
+			h3 {
+				display: none;
+			}
+			img {
+				display: none;
+			}
+		}
 		.nav-bar {
 			display: flex;
-			margin-inline: auto;
+			margin: {
+				top: 1rem;
+				inline: auto;
+			}
 			transform: translateX(0%);
 			width: 95%;
+			padding: 0.2rem;
 			position: relative;
 			border-radius: $base-border-radius;
 
@@ -122,14 +133,21 @@
 
 				li,
 				.nav-bar-active li {
+					&:nth-child(1) {
+						margin-top: 0rem;
+					}
 					margin-top: 0;
 
 					a {
 						font-size: 1.5rem;
 
+						&:hover {
+							background: white;
+						}
+
 						&.router-link-exact-active {
 							color: black;
-							padding: none;
+							box-shadow: $box-shadow;
 						}
 					}
 				}

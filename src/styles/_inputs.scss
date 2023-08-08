@@ -1,26 +1,11 @@
-.profile-container {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	margin-top: 2rem;
-	margin-inline: 3rem;
-	.button-ctr {
-		margin: auto;
-		margin-top: 2rem;
-	}
-	ul {
-		font-size: $base-font-size;
-		list-style: none;
-	}
-}
-
 input,
 button,
 select {
 	border: none;
 	outline: none;
 }
-.button-ctr {
+
+.ctr-button {
 	background: $gradient-primary;
 	box-shadow: $box-shadow;
 	font-size: $base-font-size;
@@ -28,11 +13,19 @@ select {
 	width: 10rem;
 	border-radius: $base-border-radius;
 	cursor: pointer;
-
-	&:hover {
-		transform: scale(1.1);
-	}
 }
+.ghost-button {
+	border: {
+		style: solid;
+		color: $secondary;
+		radius: $base-border-radius;
+		width: 2px;
+	}
+	font-size: $base-font-size;
+	padding: 1rem;
+	cursor: pointer;
+}
+
 input[type="text"] {
 	padding: 0.7rem;
 	font-size: $font-size-lg;
@@ -48,8 +41,8 @@ input[type="text"] {
 	padding: 0.7rem;
 	font-size: $base-font-size;
 	border-radius: $base-border-radius;
-	cursor: pointer;
 	background-color: $secondary;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 700px) {
