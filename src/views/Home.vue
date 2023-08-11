@@ -1,4 +1,6 @@
 <script setup>
+	import CardComponent from "../components/CardComponent.vue";
+
 	const cards = [
 		{
 			id: 1,
@@ -54,18 +56,8 @@
 <template>
 	<h1>Home</h1>
 	<blockquote>The greatest strenght is in your mind</blockquote>
-	<div class="cards-container">
-		<div v-for="card in cards">
-			<div class="card">
-				<div class="card-left-side">
-					<h3 class="card-title">{{ card.title }}</h3>
-					<button class="ghost-button">
-						<router-link :to="card.redirect">GO!</router-link>
-					</button>
-				</div>
-				<img :src="card.image" />
-			</div>
-		</div>
-	</div>
+
+	<CardComponent :cards="cards"></CardComponent>
+
 	<blockquote>Build your body part by part</blockquote>
 </template>

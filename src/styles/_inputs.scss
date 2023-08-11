@@ -39,10 +39,11 @@ input[type="text"] {
 
 .genre-selector {
 	padding: 0.7rem;
-	font-size: $base-font-size;
+	font-size: $font-size-lg;
 	border-radius: $base-border-radius;
 	background-color: $secondary;
 	cursor: pointer;
+	width: 100%;
 }
 
 @media screen and (min-width: 700px) {
