@@ -9,11 +9,10 @@
 - Sass
 - Local storage
 
-**First version**
-
-<!--
   **Last update:**
- -->
+
+- Added dark theme.
+- App optimized using components.
 
 ## Screenshots
 

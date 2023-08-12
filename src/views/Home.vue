@@ -55,9 +55,6 @@
 
 <template>
 	<h1>Home</h1>
-	<blockquote>The greatest strenght is in your mind</blockquote>
 
 	<CardComponent :cards="cards"></CardComponent>
-
-	<blockquote>Build your body part by part</blockquote>
 </template>

@@ -1,0 +1,52 @@
+body.dark-body {
+	background: $dark;
+	h1,
+	h3,
+	p,
+	ul,
+	label {
+		color: $light;
+	}
+	.full-bar {
+		.nav-bar,
+		.nav-bar-active {
+			backdrop-filter: blur(10rem);
+			box-shadow: none;
+			ul {
+				li {
+					a {
+						&.router-link-exact-active {
+							box-shadow: none;
+						}
+					}
+				}
+			}
+		}
+
+		.burger,
+		.toggle-burger {
+			div {
+				background-color: $light;
+			}
+		}
+	}
+	.cards-container {
+		.card {
+			box-shadow: none;
+		}
+	}
+	.profile-container {
+		.ctr-button {
+			box-shadow: none;
+		}
+	}
+
+	@media screen and (min-width: 700px) {
+		.full-bar {
+			.nav-bar {
+				background-color: $light;
+				box-shadow: none;
+			}
+		}
+	}
+}
